@@ -1,0 +1,38 @@
+{
+  "network": "mainnet",
+  "stratum": {
+    "host": "solo.ckpool.org",
+    "port": 3333,
+    "workerName": "solominer"
+  },
+  "mining": {
+    "payoutAddress": "YOUR_BITCOIN_ADDRESS_HERE",
+    "workerName": "solominer"
+  },
+  "pools": [
+    {
+      "id": "ckpool-solo",
+      "name": "CKPool Solo",
+      "host": "solo.ckpool.org",
+      "port": null,
+      "isEnabled": true,
+      "priority": 0
+    },
+    {
+      "id": "public-pool",
+      "name": "Public Pool",
+      "host": "public-pool.io",
+      "port": 21496,
+      "isEnabled": false,
+      "priority": 1
+    }
+  ],
+  "throttle": {
+    "enableAutoThrottle": true,
+    "maxGpuUsage": 80,
+    "ecoModeBatchExponent": 20,
+    "fullModeBatchExponent": 24,
+    "idleThresholdSeconds": 60,
+    "checkIntervalSeconds": 5
+  }
+}
